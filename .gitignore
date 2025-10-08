@@ -1,12 +1,36 @@
-# VS Code settings
-.vscode/
-
-# System files
-Thumbs.db
+# -----------------------------
+# OS-specific files
+# -----------------------------
 .DS_Store
+Thumbs.db
 
+# -----------------------------
+# VS Code settings
+# -----------------------------
+.vscode/
+*.code-workspace
+
+# -----------------------------
 # Logs and temporary files
+# -----------------------------
 *.log
+*.tmp
+*.swp
+*.bak
 
-# Node modules (if you ever use Node.js)
+# -----------------------------
+# Build / distribution folders
+# -----------------------------
+dist/
+build/
+
+# -----------------------------
+# Dependencies (if you ever use Node.js)
+# -----------------------------
 node_modules/
+
+# -----------------------------
+# Environment variables (for keys or secrets)
+# -----------------------------
+.env
+.env.local
