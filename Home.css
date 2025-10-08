@@ -48,6 +48,21 @@ nav{
     color: #0073b1; /* Changes color on hover (LinkedIn blue as an example) */
 }
 
+.cv-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: hsl(213, 30%, 38%);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+.cv-button:hover {
+    background-color: hsl(213, 30%, 28%);
+}
 .nav-links{
     list-style: none;
     display: flex;
@@ -73,18 +88,22 @@ footer {
   color: white;
   padding: 10px 20px;
   text-align: center;
+  width: 100%;
+  margin-top: 100px;
 }
 
  section {
       padding: 40px 20px;
       max-width: 900px;
       margin: auto;
+      margin-left: 250px;
     }
 
   .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
+      height: 350px;
     }
 
     .project {
@@ -99,3 +118,7 @@ footer {
       margin-bottom: 10px;
       color: #002b5b;
     }  
+
+    #contact{
+        margin-bottom: 100px;
+    }
