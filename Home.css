@@ -3,13 +3,16 @@
     box-sizing: border-box;
 }
 body{
-background-color: hsl(213, 30%, 68%);
+/*background-color: hsl(213, 30%, 68%);*/
+  color: #333;
+ background-color: #f5f7fa;
+ font-family: sans-serif;
 }
 nav{
     background-color: hsl(213, 30%, 38%);
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .image{
@@ -55,6 +58,8 @@ nav{
 .nav-links a {
     color: white;
     text-decoration: none; /* Removes the underline from links */
+    font-weight: bold;
+    
 }
 .nav-links a:hover {
     color: cornsilk; /* Adds underline on hover for better UX */
