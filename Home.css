@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+background-color: hsl(213, 30%, 68%);
+}
+nav{
+    background-color: hsl(213, 30%, 38%);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.image{
+    width: 200px;
+    border-radius: 50%;
+    max-width: 100%; /* Ensures the image fits within the 'side' div */
+    height: 160px;
+}
+
+.everything {
+    display: flex;
+    gap: 0px; /* Adds space between 'side' and 'content' */
+    margin: 40px;
+    margin-top: 100px;
+}
+
+.side {
+    flex: 0 0 20%; /* Side takes 30% */
+}
+
+.content {
+    flex: 1; /* Content takes the rest of the space */
+}
+
+.social-links a {
+    font-size: 1.5rem; /* Makes icons bigger */
+    margin-right: 15px; /* Adds space between icons */
+    color: #0b0808; /* Sets a default icon color */
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #0073b1; /* Changes color on hover (LinkedIn blue as an example) */
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0; /* Reset default ul margins */
+}
+.nav-links a {
+    color: white;
+    text-decoration: none; /* Removes the underline from links */
+}
+.nav-links a:hover {
+    color: cornsilk; /* Adds underline on hover for better UX */
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: auto; /* or 100% if you want it across the whole page */
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
