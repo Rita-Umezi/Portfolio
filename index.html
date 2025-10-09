@@ -11,8 +11,7 @@
     <nav>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">Portfolio</a></li>
-            <li><a href="index.html">Resumé</a></li>
+            <li><a href="#content">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -21,7 +20,7 @@
 <div class="everything">
     <div class="side">
         <img class="image" src="MIne.png" alt="My portfolio picture"> 
-        <h3>Rita</h3>
+        <h3 style="margin-top: 20px;">Rita</h3>
         <p>Full stack developer</p>     
         <div class="social-links">
             <a href="https://github.com/rita-umezi" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
@@ -31,9 +30,13 @@
             rel="noopener noreferrer">
             <i class="fa-brands fa-wix text-4xl"></i>
         </a>
-             <a href="CV.pdf" class="cv-button" download>Download CV</a>
+             
         </div>
+         <div class="resume" style="margin: 20px 0 40px 0; text-decoration: none;">
+    <a href="https://docs.google.com/document/d/1SqQfMdh8tzpkDgQQPNfk99hCy2KNM1mk/edit?usp=drivesdk&ouid=100667824100883542023&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="resume-button">View My Resumé</a>
+  </div>
     <!--<i class="fa-solid fa-circle-user"></i>-->
+    <a href="CV.pdf" class="cv-button" download>Download CV</a>
     </div>
     
     <div class="content"> 
@@ -44,25 +47,22 @@ My foundation is built on modern HTML5, CSS3, and JavaScript (ES6+), and I speci
 
 I am driven by a commitment to performance optimization and accessibility standards, believing that a superior user experience is non-negotiable. Whether collaborating with designers or working independently on feature development, I bring relentless dedication and a structured approach to delivering high-quality, maintainable code.</p>
     <h3>Skills:</h3>
-    <i class="fa-brands fa-java"></i>
-    <i class="fa-brands fa-js"></i>
-    <i class="fa-brands fa-react"></i>
-    <i class="fa-brands fa-html5"></i>
-    <i class="fa-brands fa-css3-alt"></i>
-<i class="fa-brands fa-react"></i>
+    <p> <i class="fa-brands fa-java"></i> Intermediate Java</p><br>
+    <p><i class="fa-brands fa-js"></i> Intermediate JavaScript</p><br>
+    <p><i class="fa-brands fa-react"></i> Intermediate React</p><br>
+    <p><i class="fa-brands fa-html5"></i> Intermediate HTML5</p><br>
+    <p><i class="fa-brands fa-css3-alt"></i> Intermediate CSS3</p><br>
 
-
-    <p>JavaScript, React, Node.js, CSS, HTML</p>
     <div class="education">
     <h3>Education</h3>
-    <p></p>
+    <p>Completed my Secondary School Certificate. Bachelor's degree ongoing in Babcock University Ilishan-Remo</p>
 </div>
     </div>
 
     </div>
 
      <section id="projects">
-    <h2>My Projects</h2>
+    <h2 style="margin-left: 270px;">My Projects</h2>
     <div class="projects">
       <div class="project">
         <h3>Health & Wellness Page</h3>
@@ -74,23 +74,29 @@ I am driven by a commitment to performance optimization and accessibility standa
       </div>
       <div class="project">
         <h3>Portfolio Website</h3>
-        <p>This very site! Built with HTML and CSS to display my work.</p>
-      </div>
+        <p>This very site! Built with HTML, CSS and JavaScript to display my work.</p>
+        </div>
     </div>
   </section>
 
+
   <section id="contact">
-    <h2>Contact Me</h2>
-    <i class="fa-solid fa-phone"></i>
-    <i class="fa-brands fa-whatsapp"></i>
-    <i class="fa-solid fa-inbox"></i>
-    <p style="font-size: small;">
-      Email: <a href="mailto:youremail@example.com">youremail@example.com</a><br>
-      </p>
+    <h2>Keep in Contact</h2>
+    <p><i class="fa-solid fa-phone"></i> 08125600572</p>
+    <p><i class="fa-brands fa-whatsapp"></i> 08125600572</p>
+    <p><i class="fa-solid fa-inbox"></i><a href="mailto:umwzinwarita464@gmail.com">umwzinwarita464@gmail.com</a></p>
   </section>
+  
 
-
-
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+    <button type="submit">Submit</button>
+  </form>
     <footer>
         <p>&copy; 2025 Rita Umezinwa. All rights reserved.</p></footer>
 </body>
