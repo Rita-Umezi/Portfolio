@@ -6,18 +6,22 @@ body{
 /*background-color: hsl(213, 30%, 68%);*/
   color: #333;
  background-color: #f5f7fa;
- font-family: sans-serif;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 html{
     scroll-behavior: smooth;
 }
 
 nav{
-    background-color: hsl(213, 30%, 38%);
+    background-color: hsl(213, 82%, 11%);
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .image{
     width: 200px;
@@ -30,11 +34,12 @@ nav{
     display: flex;
     gap: 0px; /* Adds space between 'side' and 'content' */
     margin: 40px;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 .side {
     flex: 0 0 20%; /* Side takes 30% */
+    text-align: center;
 }
 
 .content {
@@ -54,13 +59,12 @@ nav{
 
 .cv-button {
     padding: 6px 12px; /* Reduced padding to make the button smaller */
-    background-color: hsl(213, 30%, 38%);
+    background-color: #0073b1;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
     transition: background-color 0.3s ease;
-
 }
 .cv-button:hover {
     background-color: hsl(213, 30%, 28%);
@@ -93,10 +97,15 @@ footer {
   width: 100%;
   margin-top: 100px;
 }
-
- 
-
-  .projects {
+.skills{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 0.6;
+    font-size: medium;
+    text-align: justify;
+}
+.projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
@@ -108,7 +117,7 @@ footer {
       margin-left: 250px;
     }
 
-    .project {
+.project {
       background-color: white;
       padding: 20px;
       border-radius: 10px;
@@ -121,11 +130,45 @@ footer {
         box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
 
-    .project h3 {
+.project h3 {
       margin-bottom: 10px;
       color: #002b5b;
     }  
 
-    #contact{
+.message{
+    display: flex;
+    gap: 20px; /* Adds space between 'contact' and 'form' */
+    margin: 40px;
+    margin-top: 100px;
+}    
+.message a{
+    color: rgb(104, 104, 223);
+    text-decoration: none;
+
+}
+
+#contact{
         margin-bottom: 100px;
+        flex: 0 0 20%; /* Side takes 30% */
+    }
+
+form{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        background-color: rgb(247, 245, 252);
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        width: 200px;
+        height: 400px;
+        resize:none;
+        flex: 1; /* Content takes the rest of the space */
+    }
+
+    .btn{
+        width: 100px;
+        height: 40px;
+        background-color: #0073b1;
+        border: none;
     }
