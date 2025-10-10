@@ -13,7 +13,8 @@ html{
 }
 
 nav{
-    background-color: hsl(213, 82%, 11%);
+    /*background-color: hsl(213, 82%, 11%);*/
+    background-color: #0073b1;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -27,24 +28,28 @@ nav{
     width: 200px;
     border-radius: 50%;
     max-width: 100%; /* Ensures the image fits within the 'side' div */
-    height: 160px;
+    height: 200px;
 }
 
 .everything {
     display: flex;
-    gap: 0px; /* Adds space between 'side' and 'content' */
+    gap: 100px; /* Adds space between 'side' and 'content' */
     margin: 40px;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .side {
     flex: 0 0 20%; /* Side takes 30% */
-    text-align: center;
+    text-align: justify;
+}
+.side h3:hover{
+    transform: scaleY(1.2);
 }
 
 .content {
     flex: 1; /* Content takes the rest of the space */
 }
+
 
 .social-links a {
     font-size: 1.5rem; /* Makes icons bigger */
@@ -57,8 +62,15 @@ nav{
     color: #0073b1; /* Changes color on hover (LinkedIn blue as an example) */
 }
 
+.resume{
+    color: #0073b1;
+}
+.resume:hover{
+    color: rgb(17, 17, 77);
+}
 .cv-button {
     padding: 6px 12px; /* Reduced padding to make the button smaller */
+    display: block;
     background-color: #0073b1;
     color: white;
     text-decoration: none;
@@ -68,6 +80,7 @@ nav{
 }
 .cv-button:hover {
     background-color: hsl(213, 30%, 28%);
+    animation: bounce 1s ease;
 }
 .nav-links{
     list-style: none;
@@ -113,8 +126,6 @@ footer {
       margin-top: 20px;
       padding: 40px 20px;
       max-width: 900px;
-      margin: auto;
-      margin-left: 250px;
     }
 
 .project {
@@ -144,31 +155,55 @@ footer {
 .message a{
     color: rgb(104, 104, 223);
     text-decoration: none;
-
 }
 
-#contact{
-        margin-bottom: 100px;
-        flex: 0 0 20%; /* Side takes 30% */
-    }
 
 form{
-        display: flex;
-        flex-direction: column;
         margin-bottom: 50px;
-        background-color: rgb(247, 245, 252);
+        background-color: rgb(203, 207, 227);
         padding: 50px;
         border-radius: 10px;
         box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        width: 200px;
-        height: 400px;
-        resize:none;
-        flex: 1; /* Content takes the rest of the space */
+        width: 500px;
+        height: 450px;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        position: relative;
     }
-
-    .btn{
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.btn{
         width: 100px;
         height: 40px;
         background-color: #0073b1;
         border: none;
+        border-radius: 5px;
+        align-self: flex-end;
+        margin-top: 15px;
+        margin-right: 10px;
     }
+
+#contact{
+     flex: 0 0 20%; /* Side takes 30% */
+} 
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
