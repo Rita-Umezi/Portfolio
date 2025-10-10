@@ -223,6 +223,9 @@ footer {
 
 /* ===== HAMBURGER MENU (MOBILE) ===== */
 @media (max-width: 768px) {
+body{
+    color: #333;
+}  
   .nav-links {
     display: none;
     flex-direction: column;
