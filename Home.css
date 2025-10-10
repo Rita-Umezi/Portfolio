@@ -257,15 +257,18 @@ footer {
   }
 
   #content {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .projects {
     grid-template-columns: 1fr;
     padding: 20px;
     height: auto;
-    margin-top: 50px;
   }
+.projects h1{
+    margin-top: 50px;
+}
+
 
   .message {
     flex-direction: column;
